@@ -1,0 +1,22 @@
+Simple patch - removes duplicates from fortune file. 
+Spotted by The Man Who Refuses To Accept His RW [TM].
+
+diff -burN kernelnewbies-20041003.orig/kernelnewbies kernelnewbies-20041003/kernelnewbies
+--- kernelnewbies-20041003.orig/kernelnewbies	2004-10-08 20:13:13.616305592 +0200
++++ kernelnewbies-20041003/kernelnewbies	2004-10-08 20:14:09.674783408 +0200
+@@ -132,15 +132,6 @@
+ 
+ 	- Alan Cox
+ %
+-"Thanks, and THIS time it really is fixed. I mean, how many times can we
+- get it wrong? At some point, we just have to run out of really bad ideas.."
+-
+-	- Linus Torvalds
+-%
+-"I am getting pretty good at running diff and patch now."
+-
+-	- Jeff Merkey 
+-%
+ "I'd rather not work with people who aren't careful. It's darwinism 
+  in software development.  It's a cold, callous argument that says 
+  that there are two kinds of people, and I'd rather not work with the 
