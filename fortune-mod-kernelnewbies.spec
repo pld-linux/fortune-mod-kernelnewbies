@@ -8,6 +8,7 @@ Group:		Applications/Games
 Requires:	fortune-mod
 Source0:	http://www.kernelnewbies.org/kernelnewbies-fortunes.tar.gz
 # Source0-md5:	73fbc76bfec32d3cc0da326485e7a13d
+Patch0:		%{name}-remove_duplicates.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,6 +33,7 @@ kernelnewbies.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
