@@ -1,5 +1,5 @@
 Summary:	kernelnewbies fortunes
-Summary(pl.UTF-8):   Zestaw fortunek kernelnewbies
+Summary(pl.UTF-8):	Zestaw fortunek kernelnewbies
 Name:		fortune-mod-kernelnewbies
 Version:	20041003
 Release:	1
