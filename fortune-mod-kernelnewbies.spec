@@ -9,6 +9,7 @@ Requires:	fortune-mod
 Source0:	http://www.kernelnewbies.org/kernelnewbies-fortunes.tar.gz
 # Source0-md5:	73fbc76bfec32d3cc0da326485e7a13d
 Patch0:		%{name}-remove_duplicates.patch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
